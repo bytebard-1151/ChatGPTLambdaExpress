@@ -4,6 +4,10 @@ ChatGPTExpress is an open-source project that integrates an Express.js applicati
 
 This project enables robust and scalable chatbot solutions. Perfect for developers looking to deploy serverless applications with advanced AI-driven chat capabilities and efficient context management.
 
+# Forked From
+
+`https://github.com/bytebard-1151/ChatGPTLambdaExpress`
+
 # Flow
 
 ![alt text](flow.png)
