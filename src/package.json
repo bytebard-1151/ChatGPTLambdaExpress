@@ -1,0 +1,23 @@
+{
+  "name": "modularcode",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "debug": "sam local invoke ExpressApi -t ../template-local.yaml --env-vars ../env.json --debug-port 9229"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-serverless-express": "^3.4.0",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "node-fetch": "^3.3.2",
+    "openai": "^4.47.1",
+    "twilio": "^5.0.4"
+  }
+}

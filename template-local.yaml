@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Globals:
+  Function:
+    Timeout: 30
+    MemorySize: 512
+    Runtime: nodejs18.x
+    Environment:
+      Variables:
+        NODE_ENV: local
+        TWILIO_ACCOUNT_SID: ''
+        TWILIO_AUTH_TOKEN: ''
+        OPENAI_API_KEY: ''
+Resources:
+  ExpressApi:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda.handler
+      CodeUri: src/
+      Policies:
+        - AWSLambdaBasicExecutionRole
+      Environment:
+        Variables:
+          NODE_ENV: production
+      Events:
+        ApiEvent:
+          Type: Api
+          Properties:
+            Path: /{proxy+}
+            Method: ANY
+Outputs:
+  ApiUrl:
+    Description: API Gateway endpoint URL for Prod stage
+    Value: !Sub https://${ServerlessRestApi}.execute-api.${AWS::Region}.amazonaws.com/Prod/whatsapp
