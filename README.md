@@ -6,7 +6,9 @@ This project enables robust and scalable chatbot solutions. Perfect for develope
 
 # Forked From
 
-`https://github.com/bytebard-1151/ChatGPTLambdaExpress`
+## Forked From
+
+This project is a fork of [ChatGPTLambdaExpress](https://github.com/bytebard-1151/ChatGPTLambdaExpress), which serves as the base for our enhancements and customizations.
 
 # Flow
 
