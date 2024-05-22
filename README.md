@@ -10,9 +10,13 @@ This project enables robust and scalable chatbot solutions. Perfect for develope
 
 This project is a fork of [ChatGPTLambdaExpress](https://github.com/bytebard-1151/ChatGPTLambdaExpress), which serves as the base for our enhancements and customizations.
 
+# Demo
+
+<img src="demo.png" alt="alt text" width="200">
+
 # Flow
 
-![alt text](flow.png)
+<img src="flow.png" alt="alt text" width="400">
 
 ## Prerequisites
 
